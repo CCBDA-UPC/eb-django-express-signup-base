@@ -1,5 +1,6 @@
 .idea/*
-*.sqlite3
+*.sqlite3+
+.env
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
