@@ -26,7 +26,7 @@ SECRET_KEY = ')ax^t(vhomtt9166)y5bss9pz&5s7&$v^+16f^90hw(&@m5wyb'
 
 DEBUG = os.environ['DEBUG'] == 'True'
 
-ALLOWED_HOSTS = ['.elasticbeanstalk.com','localhost','127.0.0.1', '172.*.*.*']
+ALLOWED_HOSTS = ['.elasticbeanstalk.com','localhost','127.0.0.1', '172.']
 
 
 # Application definition
