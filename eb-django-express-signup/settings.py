@@ -27,7 +27,13 @@ SECRET_KEY = ')ax^t(vhomtt9166)y5bss9pz&5s7&$v^+16f^90hw(&@m5wyb'
 DEBUG = os.environ['DEBUG'] == 'True'
 from socket import gethostname, gethostbyname
 
-ALLOWED_HOSTS = ['.elasticbeanstalk.com','localhost','127.0.0.1', gethostname(), gethostbyname(gethostname())]
+hostname = gethostname()
+try:
+    local_ip = gethostbyname(hostname)
+except:
+    local_ip = '127.0.0.1'
+
+ALLOWED_HOSTS = ['.elasticbeanstalk.com','localhost', hostname, local_ip]
 
 
 # Application definition
